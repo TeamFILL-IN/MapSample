@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.teamfillin.mapsample"
         minSdk 26
-        targetSdk 31
+        targetSdk 30
         versionCode 1
         versionName "1.0"
 
@@ -41,8 +41,10 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.4.0'
 
     implementation 'com.naver.maps:map-sdk:3.13.0'
+    implementation 'com.google.android.gms:play-services-location:19.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
 
     testImplementation 'junit:junit:4.13.2'
