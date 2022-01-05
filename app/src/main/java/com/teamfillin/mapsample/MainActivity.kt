@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         locationSource = FusedLocationSource(this, LOCATION_PERMISSION_REQUEST_CODE)
         lifecycle.addObserver(MapViewLifecycleObserver(binding.mapMain, savedInstanceState))
-        locationSource = FusedLocationSource(this, LOCATION_PERMISSION_REQUEST_CODE)
         binding.mapMain.getMapAsync(NaverMapProvider(locationSource, naverMap))
     }
 
